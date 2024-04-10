@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercici 2 - Consulta el temps meteorològic</title>
+</head>
+
+<body>
+    <h2>Formulari d'ubicació</h2>
+    <!-- novalidate = Anul·lem les validacions automàtiques d'html -->
+    <form id="location" novalidate>
+        <label for="street">Carrer:</label><br>
+        <input type="text" id="street" name="street"><br>
+
+        <label for="city">Ciutat:</label><br>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="postalCode">Codi Postal:</label><br>
+        <input type="text" id="postalCode" name="postalCode"><br>
+
+        <label for="country">País:</label><br>
+        <input type="text" id="country" name="country"><br>
+
+        <input type="submit" value="Buscar temps">
+    </form>
+    <br>
+    <div id="weatherResults" class="hidden">
+        <h2>Localització</h2>
+        <p id="location"></p>
+        <div>
+            <h3>Informació meteorològica</h3>
+            <p id="temperature"></p>
+            <p id="weatherDescription"></p>
+            <img id="weatherIcon" alt="Icona Meteorològica" />
+        </div>
+        <div>
+            <h3>Previsió per demà</h3>
+            <p id="forecastTemperature"></p>
+            <p id="forecastWeatherDescription"></p>
+            <img id="forecastWeatherIcon" alt="Icona Meteorològica Demà" />
+        </div>
+    </div>
+
+    <script src="exercici2.js"></script>
+</body>
+
+</html>
